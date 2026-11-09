@@ -395,6 +395,9 @@ class SolisBaseSensor:
         if not values or None in values:
             return None
 
+        if self.data_type == DataType.STRING.value:
+            return extract_serial_number(values) or None
+
         if len(self.registrars) >= 15:
             values = values
             n_value = extract_serial_number(values)

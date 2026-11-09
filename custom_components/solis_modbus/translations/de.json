@@ -41,7 +41,8 @@
           "has_hv_battery": "Has HV Battery Storage (100v+)",
           "has_generator": "Has Generator",
           "has_dual_meter": "Zweiter Smart Meter installiert (Netz + PV-Wechselrichter Doppelzähler-Aufbau)",
-          "has_epm": "EPM / Export Power Manager installiert (36xxx-Zählerregister)"
+          "has_epm": "EPM / Export Power Manager installiert (36xxx-Zählerregister)",
+          "has_extended": "Erweiterte Register: alle übrigen Register des Hybrid-Protokolls schreibgeschützt anzeigen (ca. 20 zusätzliche langsame Modbus-Abfragen)"
         }
       },
       "reconfigure": {
@@ -76,7 +77,8 @@
           "has_hv_battery": "Has HV Battery Storage (100v+)",
           "has_generator": "Has Generator",
           "has_dual_meter": "Zweiter Smart Meter installiert (Netz + PV-Wechselrichter Doppelzähler-Aufbau)",
-          "has_epm": "EPM / Export Power Manager installiert (36xxx-Zählerregister)"
+          "has_epm": "EPM / Export Power Manager installiert (36xxx-Zählerregister)",
+          "has_extended": "Erweiterte Register: alle übrigen Register des Hybrid-Protokolls schreibgeschützt anzeigen (ca. 20 zusätzliche langsame Modbus-Abfragen)"
         }
       }
     },
@@ -120,7 +122,8 @@
           "has_ac_coupling": "Has AC Coupling",
           "has_parallel": "Parallel inverter operation (multiple units)",
           "has_dual_meter": "Zweiter Smart Meter installiert (Netz + PV-Wechselrichter Doppelzähler-Aufbau)",
-          "has_epm": "EPM / Export Power Manager installiert (36xxx-Zählerregister)"
+          "has_epm": "EPM / Export Power Manager installiert (36xxx-Zählerregister)",
+          "has_extended": "Erweiterte Register: alle übrigen Register des Hybrid-Protokolls schreibgeschützt anzeigen (ca. 20 zusätzliche langsame Modbus-Abfragen)"
         }
       }
     },

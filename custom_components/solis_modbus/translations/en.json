@@ -41,7 +41,8 @@
           "has_hv_battery": "Has HV Battery Storage (100v+)",
           "has_generator": "Has Generator",
           "has_dual_meter": "Second smart meter installed (Grid + PV inverter dual-meter setup)",
-          "has_epm": "EPM / export power manager installed (36xxx meter registers)"
+          "has_epm": "EPM / export power manager installed (36xxx meter registers)",
+          "has_extended": "Extended registers: expose every other register of the hybrid protocol sheet read-only (~20 extra slow-poll Modbus frames; settings are read once at startup)"
         }
       },
       "reconfigure": {
@@ -76,7 +77,8 @@
           "has_hv_battery": "Has HV Battery Storage (100v+)",
           "has_generator": "Has Generator",
           "has_dual_meter": "Second smart meter installed (Grid + PV inverter dual-meter setup)",
-          "has_epm": "EPM / export power manager installed (36xxx meter registers)"
+          "has_epm": "EPM / export power manager installed (36xxx meter registers)",
+          "has_extended": "Extended registers: expose every other register of the hybrid protocol sheet read-only (~20 extra slow-poll Modbus frames; settings are read once at startup)"
         }
       }
     },
@@ -120,7 +122,8 @@
           "connection": "Connection Type",
           "inverter_serial": "Inverter Serial",
           "has_dual_meter": "Second smart meter installed (Grid + PV inverter dual-meter setup)",
-          "has_epm": "EPM / export power manager installed (36xxx meter registers)"
+          "has_epm": "EPM / export power manager installed (36xxx meter registers)",
+          "has_extended": "Extended registers: expose every other register of the hybrid protocol sheet read-only (~20 extra slow-poll Modbus frames; settings are read once at startup)"
         }
       }
     },

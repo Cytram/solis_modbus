@@ -33,6 +33,9 @@ class InverterFeature(Enum):
     PARALLEL = "parallel"
     DUAL_METER = "dual_meter"
     EPM = "epm"
+    # Opt-in: every register of the hybrid protocol sheet not covered by a
+    # curated entity, exposed read-only (see sensor_data/hybrid_extended_sensors.py).
+    EXTENDED = "extended"
 
 
 class Category(Enum):

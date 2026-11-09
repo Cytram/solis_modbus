@@ -41,7 +41,8 @@
           "has_hv_battery": "Has HV Battery Storage (100v+)",
           "has_generator": "Has Generator",
           "has_dual_meter": "Tweede slimme meter geïnstalleer (Netwerk + PV-omsetter dubbelmeter-opstelling)",
-          "has_epm": "EPM / uitvoerkragbestuurder geïnstalleer (36xxx meterregisters)"
+          "has_epm": "EPM / uitvoerkragbestuurder geïnstalleer (36xxx meterregisters)",
+          "has_extended": "Uitgebreide registers: wys alle ander registers van die hibriede protokol slegs-lees (sowat 20 ekstra stadige Modbus-rame)"
         }
       },
       "reconfigure": {
@@ -76,7 +77,8 @@
           "has_hv_battery": "Has HV Battery Storage (100v+)",
           "has_generator": "Has Generator",
           "has_dual_meter": "Tweede slimme meter geïnstalleer (Netwerk + PV-omsetter dubbelmeter-opstelling)",
-          "has_epm": "EPM / uitvoerkragbestuurder geïnstalleer (36xxx meterregisters)"
+          "has_epm": "EPM / uitvoerkragbestuurder geïnstalleer (36xxx meterregisters)",
+          "has_extended": "Uitgebreide registers: wys alle ander registers van die hibriede protokol slegs-lees (sowat 20 ekstra stadige Modbus-rame)"
         }
       }
     },
@@ -120,7 +122,8 @@
           "has_ac_coupling": "Has AC Coupling",
           "has_parallel": "Parallel inverter operation (multiple units)",
           "has_dual_meter": "Tweede slimme meter geïnstalleer (Netwerk + PV-omsetter dubbelmeter-opstelling)",
-          "has_epm": "EPM / uitvoerkragbestuurder geïnstalleer (36xxx meterregisters)"
+          "has_epm": "EPM / uitvoerkragbestuurder geïnstalleer (36xxx meterregisters)",
+          "has_extended": "Uitgebreide registers: wys alle ander registers van die hibriede protokol slegs-lees (sowat 20 ekstra stadige Modbus-rame)"
         }
       }
     },

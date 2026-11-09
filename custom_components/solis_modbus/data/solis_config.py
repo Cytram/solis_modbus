@@ -15,6 +15,7 @@ class InverterOptions:
         parallel: bool = False,
         dual_meter: bool = False,
         epm: bool = True,
+        extended: bool = False,
     ):
         self.pv = pv
         self.battery = battery
@@ -25,6 +26,7 @@ class InverterOptions:
         self.parallel = parallel
         self.dual_meter = dual_meter
         self.epm = epm
+        self.extended = extended
 
 
 class InverterConfig:
@@ -74,6 +76,8 @@ class InverterConfig:
             feats.append(InverterFeature.DUAL_METER)
         if opts.epm:
             feats.append(InverterFeature.EPM)
+        if getattr(opts, "extended", False):
+            feats.append(InverterFeature.EXTENDED)
         if self.type == InverterType.WAVESHARE or self.connection == "WAVESHARE":
             feats.append(InverterFeature.TCP)
         self.features: list[InverterFeature] = feats
@@ -113,6 +117,7 @@ def inverter_options_from_config(config: dict, template: InverterConfig) -> Inve
         hv_battery=config.get("has_hv_battery", False),
         dual_meter=config.get("has_dual_meter", False),
         epm=config.get("has_epm", True),
+        extended=config.get("has_extended", False),
     )
 
 

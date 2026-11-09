@@ -54,6 +54,12 @@ Whilst the solis inverters do provide total sensors for today, yesterday, month 
 **Poll Interval**:
 - Customize how frequently sensors update. Faster polling provides more real-time data but increases Modbus load.
 
+**Extended registers** (hybrid inverters, off by default):
+- Exposes every other register of the hybrid protocol sheet (`RS485_MODBUS(ESINV-33000ID) Hybrid Inverter`) that has no curated entity yet — about 900 read-only sensors: fault/warning codes 06/07, battery fault codes, public-grid-side phase values, backup-port phase power, smart-port and generator energy, parallel-system totals, LG/BMS2 battery data, IV-curve scan points, historical energy query slots, and a read-only mirror of the 43xxx/44xxx settings (grid code, battery, remote dispatch, …).
+- Nothing here is writable. Grid-code and other setting registers are only shown, never written.
+- Telemetry adds ~20 frames to the *slow* poll tier; setting/grid-code groups are read once at startup (reload the integration to refresh them). Diagnostic-only groups (grid code, IV curve, history slots, brand-specific battery data, settings) are created disabled in the entity registry — enable the ones you need.
+- The definitions are generated: `uv run --with openpyxl python tools/generate_extended_sensors.py <protocol.xlsx>`.
+
 ### What's new in 4.2.3
 
 **Fix for [#452](https://github.com/Pho3niX90/solis_modbus/issues/452)** — v4.2.0 could create duplicate entities (original `Unavailable`, new live copy often with a location prefix in the `entity_id`) when sensor definition dicts changed.

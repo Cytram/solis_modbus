@@ -39,7 +39,9 @@ class SolisSensor(RestoreSensor, SensorEntity):
         self._attr_available = not sensor.hidden and sensor.enabled
         # Don't register hidden/disabled sensors as enabled entities — otherwise
         # they clutter the UI and recorder as permanently-unavailable entities.
-        self._attr_entity_registry_enabled_default = sensor.enabled and not sensor.hidden
+        # registry_enabled=False: a working sensor that is simply off by default
+        # (the user can enable it), unlike enabled=False which kills it.
+        self._attr_entity_registry_enabled_default = sensor.enabled and not sensor.hidden and getattr(sensor, "registry_enabled", True) is not False
         self._attr_entity_category = sensor.entity_category
         self._attr_suggested_display_precision = self.decimal_count(sensor.multiplier)
 

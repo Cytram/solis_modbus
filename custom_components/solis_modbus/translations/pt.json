@@ -41,7 +41,8 @@
           "has_hv_battery": "Has HV Battery Storage (100v+)",
           "has_generator": "Has Generator",
           "has_dual_meter": "Segundo medidor inteligente instalado (configuração de medidor duplo Rede + inversor FV)",
-          "has_epm": "EPM / gestor de potência de exportação instalado (registos de contador 36xxx)"
+          "has_epm": "EPM / gestor de potência de exportação instalado (registos de contador 36xxx)",
+          "has_extended": "Registos alargados: expor só de leitura todos os restantes registos do protocolo híbrido (cerca de 20 tramas Modbus lentas extra)"
         }
       },
       "reconfigure": {
@@ -76,7 +77,8 @@
           "has_hv_battery": "Has HV Battery Storage (100v+)",
           "has_generator": "Has Generator",
           "has_dual_meter": "Segundo medidor inteligente instalado (configuração de medidor duplo Rede + inversor FV)",
-          "has_epm": "EPM / gestor de potência de exportação instalado (registos de contador 36xxx)"
+          "has_epm": "EPM / gestor de potência de exportação instalado (registos de contador 36xxx)",
+          "has_extended": "Registos alargados: expor só de leitura todos os restantes registos do protocolo híbrido (cerca de 20 tramas Modbus lentas extra)"
         }
       }
     },
@@ -120,7 +122,8 @@
           "has_ac_coupling": "Has AC Coupling",
           "has_parallel": "Parallel inverter operation (multiple units)",
           "has_dual_meter": "Segundo medidor inteligente instalado (configuração de medidor duplo Rede + inversor FV)",
-          "has_epm": "EPM / gestor de potência de exportação instalado (registos de contador 36xxx)"
+          "has_epm": "EPM / gestor de potência de exportação instalado (registos de contador 36xxx)",
+          "has_extended": "Registos alargados: expor só de leitura todos os restantes registos do protocolo híbrido (cerca de 20 tramas Modbus lentas extra)"
         }
       }
     },
